@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinary Scientific Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+</script>
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Pawsitive Vets</h1>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#team">Team</a></li>
+            
+            </ul>
+        </div>
+    </nav>
+<!-- Mobile Menu Toggle -->
+<div class="hamburger" id="hamburger">
+    &#9776; <!-- This is a simple hamburger icon -->
+</div>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to Our Veterinary Club</h1>
+            <p>
+                Welcome to Pawsitive Vets, a scientific club dedicated to exploring veterinary science and animal health. 
+                We aim to foster learning and promote the well-being of animals through science.
+            </p>
+            <p>Email: <a href="mailto:your-email@example.com" class="hero-contact">info.pawasitive@gmail.com</a></p>
+        <p>Phone: <a href="tel:+1234567890" class="hero-contact">+213557615497</a></p>
+        </div>
+    </header>
+    
+    <!-- About Us Section -->
+    <section id="about-us" class="about-us-section container fade-in">
+        <h2>About Us</h2>
+        <p>Welcome to Pawsitive Vets!
+            Founded in 2021, we are dedicated to hands-on learning and collaboration in veterinary science. Our mission is to inspire students and build a strong veterinary community through interactive programs and real-world experiences.
+            
+            At Pawsitive Vets, we believe in nurturing a passion for animal care while fostering essential skills like teamwork and critical thinking. Join us in shaping the future of veterinary medicine—whether you're a student, mentor, or animal lover, we welcome you to be part of our journey!</p>
+    </section>
+
+<!-- Events Section -->
+<section id="events" class="events-section container fade-in">
+    <h2>Upcoming Events</h2>
+    <div class="events-grid">
+        <div class="event-card">
+            <h3>Stay tuned for upcoming events! We have exciting activities planned for you.</h3>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+        <div class="event-card">
+            <h3>What events would you like us to organize? Share your ideas with us!</h3>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+        <div class="event-card">
+            <h3>Looking back: Here are some of our past events. Check them out for inspiration!</h3>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+    </div>
+</section>
+
+   
+
+    <section id="gallery" class="gallery-section container fade-in">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-event">
+                <h3>Batna</h3>
+                <div class="gallery-event-photos">
+                    <img src="assets/assets/photo_5924896385877001557_y.jpg" alt="Photo 1">
+                    <img src="assets/assets/IMG_3905.JPG" alt="Photo 2">
+                    <img src="assets/assets/photo_6041797999740437847_y.jpg" alt="Photo 3">
+                </div>
+            </div>
+            <div class="gallery-event">
+                <h3>Tiaret</h3>
+                <div class="gallery-event-photos">
+                    <img src="assets/assets/photo_5787445565410360605_y.jpg" alt="Photo 4">
+                    <img src="assets/assets/photo_5787432135047625586_y.jpg" alt="Photo 5">
+                    <img src="assets/assets/photo_5787432135047625589_y.jpg" alt="Photo 6">
+                </div>
+            </div>
+            <!-- New Gallery Event -->
+            <div class="gallery-event">
+                <h3>EL-Tarf</h3>
+                <div class="gallery-event-photos">
+                    <img src="assets/assets/IMG_3969.JPG" alt="Photo 7">
+                    <img src="assets/assets/IMG_3971.JPG" alt="Photo 8">
+                    <img src="assets/assets/IMG_3972.JPG" alt="Photo 9">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    </section>
+
+    <!-- Lightbox for showing clicked image -->
+    <div id="lightbox" class="lightbox hidden">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" src="" alt="Full Size Image">
+    </div>
+
+    <!-- Team Section -->
+    <section id="team" class="team-section container fade-in">
+        <h2>Meet Our Team</h2>
+        <div class="team-cards">
+            <div class="team-member">
+                <img src="assets/assets/IMG_3904.PNG" alt="Team Member 1">
+                <h3>GUELIL Labib - President</h3>
+                <p>Veterinary Student</p>
+            </div>
+            <div class="team-member">
+                <img src="assets/assets/IMG_3968.JPG" alt="Team Member 2">
+                <h3>AMRI Taha Yacine - Vice President IT admin</h3>
+                <p>Veterinary Student</p>
+            </div>
+        </div>
+    </section>
+    <!-- Membership Section -->
+<section class="membership-section" id="membership">
+    <div class="container">
+        <h2>Membership Registration</h2>
+        <form id="membership-form" action="https://formsubmit.co/info.pawasitive@gmail.com" method="POST">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn">Register</button>
+        </form>
+    </div>
+</section>
+
+   <!-- Map Section -->
+    
+<div class="map-container">
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3693.5241449900977!2d8.300390747007135!3d36.74944740962405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fac357c3d2b3e1%3A0xc4b89edfb287d4ac!2sTARF!5e0!3m2!1sfr!2sdz!4v1728091125848!5m2!1sfr!2sdz"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+        
+    </div>
+</section>
+
+        <!-- Social Media Section -->
+<section class="social-media">
+    <h2>Follow Us</h2>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/pawsitive.vets1?mibextid=LQQJ4d" target="_blank" class="social-icon facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/pawsitive_vets/" target="_blank" class="social-icon instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/YOUR_PAGE" target="_blank" class="social-icon linkedin">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+    </div>
+</section>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Pawsitive Vets. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+  
+</section>
+</body>
+</html>
+
+
+    </div>
+</section>
